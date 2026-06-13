@@ -1,0 +1,22 @@
+package ExceptionHandling;
+import java.lang.Throwable;
+public class CustomExceptions {
+	public static class AgeException extends RuntimeException{
+		public AgeException(String type) {
+			 super(type);
+		}
+	}
+   public static void main(String[] args) {
+	   int age=11;
+	   
+	  if(age<11) {
+		 throw new AgeException("too young");
+	  }
+	  else if(age>60) {
+		 throw new AgeException("old");
+	  }
+	  else {
+		  System.out.println("succesfulRegistration");
+	  }
+}
+}
