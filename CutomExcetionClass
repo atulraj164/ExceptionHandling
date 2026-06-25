@@ -1,0 +1,10 @@
+package ExceptionHandling;
+
+
+public class AgeExcetion extends RuntimeException{
+		public AgeExcetion(String message) {
+			super(message);
+		}
+		
+}
+	
