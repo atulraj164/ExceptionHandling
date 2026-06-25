@@ -1,0 +1,24 @@
+
+public class CutsomeException2 {
+	
+	
+	
+	
+	public static void checkAge(int age) throws AgeExcetion{
+		    if(age<18) {
+		    	throw new AgeExcetion("under age");
+		    }
+	}
+	
+   public static void main(String[] args) {
+	   int age=17;
+	   
+	  try {//if using checked excetion class then necessiarly adding
+		                                //handling code required try,catch direct exception throw not allowed
+		    checkAge(age);
+		  
+	  }catch (AgeExcetion e) {
+		  e.printStackTrace();
+	  }
+}
+}
